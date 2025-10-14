@@ -41,67 +41,51 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
-        <div class="row align-items-center h-100">
-            <div class="col-lg-4 text-center text-lg-start">
-                <a href="index.html">
-                    <h1 class="display-5 text-primary m-0">ग्रामपंचायत खांबी कार्यालय</h1>
-                </a>
-            </div>
-            <!-- <div class="col-lg-8 d-none d-lg-block">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="d-flex justify-content-end">
-                            <div class="flex-shrink-0 btn-square bg-primary">
-                                <i class="fa fa-phone-alt text-dark"></i>
-                            </div>
-                            <div class="ms-2">
-                                <h6 class="text-primary mb-0">Call Us</h6>
-                                <span class="text-white">+012 345 6789</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex justify-content-end">
-                            <div class="flex-shrink-0 btn-square bg-primary">
-                                <i class="fa fa-envelope-open text-dark"></i>
-                            </div>
-                            <div class="ms-2">
-                                <h6 class="text-primary mb-0">Mail Us</h6>
-                                <span class="text-white">info@domain.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex justify-content-end">
-                            <div class="flex-shrink-0 btn-square bg-primary">
-                                <i class="fa fa-map-marker-alt text-dark"></i>
-                            </div>
-                            <div class="ms-2">
-                                <h6 class="text-primary mb-0">Address</h6>
-                                <span class="text-white">123 Street, NY, USA</span>
-                            </div>
-                        </div>
-                    </div>
+   <!-- fragments/topbar.html -->
+    <div class="w-100 bg-secondary topbar-fragment" style="border-bottom:3px solid #f6c849;">
+        <div class="container d-flex align-items-center justify-content-between py-1">
+            <div class="small text-white-50">महाराष्ट्र शासन | GOVERNMENT OF MAHARASHTRA</div>
+
+            <div class="d-flex align-items-center small justify-content-end flex-column">
+                <div class="d-flex align-items-center small justify-content-center mb-2">
+                    <i class="fa fa-envelope me-2 text-white-50"></i>
+                    <span class="me-3 text-white-50">kambi.stepgp@mail.com</span>
                 </div>
-            </div> -->
+
+
+                <!-- language selector (keeps native look) -->
+                <select class="leg form-select form-select-sm ms-2" style="width:auto; display:inline-block;">
+                    <option selected>Select Language ▾</option>
+                    <option>मराठी</option>
+                    <option>English</option>
+                </select>
+            </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-secondary px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="nav-bar">
-            <nav class="navbar navbar-expand-lg bg-primary navbar-dark px-4 py-lg-0">
-                <h4 class="d-lg-none m-0">Menu</h4>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="container">
+    <!-- fragments/logo-strip.html -->
+    <div class="w-100 bg-white logo-strip" style="border-bottom:6px solid #0b1742;">
+        <div class="container d-flex align-items-center justify-content-between py-3">
+            <div class="d-flex align-items-center">
+                <img src="/img/logo.png" alt="logo" style="width:88px; height:100%; object-fit:cover;" class="me-4">
+                <div>
+                    <h1 class="mb-0" style="color:#f6c849; font-size:34px; font-weight:800; line-height:1;">
+                        ग्रामपंचायत खांबी
+                    </h1>
+                    <div class="small text-muted">ता. अर्जुनी-मोरगाव, जि. गोंदिया</div>
+                </div>
+            </div>
+
+            <div class="d-none d-md-flex align-items-center gap-3">
+                <img src="/img/nav/nav_logo1.png" alt="badge1" style="height:48px; object-fit:contain;">
+                <img src="/img/nav/nav_logo2.png" alt="badge2" style="height:48px; object-fit:contain;">
+            </div>
+        </div>
+    </div>
+    <!-- fragments/navbar.html -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="border-top:3px solid #f6c849;">
+        <div class="container">
             <!-- small-screen brand -->
             <a class="navbar-brand d-lg-none" href="index.html">Menu</a>
 
@@ -151,7 +135,10 @@
                         </ul>
                     </li>
 
-                    
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="contact.html"><i
+                                class="fa fa-phone me-2"></i>संपर्क करा</a>
+                    </li>
                 </ul>
 
                 <!-- <div class="d-flex align-items-center">
@@ -159,11 +146,8 @@
                     <button class="btn btn-warning text-dark fw-bold">महत्वाचे नंबर</button>
                 </div> -->
             </div>
-                </div>
-            </nav>
         </div>
-    </div>
-    <!-- Navbar End -->
+    </nav>
 
 
     <!-- Page Header Start -->

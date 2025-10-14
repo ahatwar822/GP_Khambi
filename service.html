@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Charitize - Charity Organization Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-4 text-center text-lg-start">
+                <a href="index.html">
+                    <h1 class="display-5 text-primary m-0">ग्रामपंचायत खांबी कार्यालय</h1>
+                </a>
+            </div>
+            <!-- <div class="col-lg-8 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-phone-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Call Us</h6>
+                                <span class="text-white">+012 345 6789</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-envelope-open text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Mail Us</h6>
+                                <span class="text-white">info@domain.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-map-marker-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Address</h6>
+                                <span class="text-white">123 Street, NY, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-secondary px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg bg-primary navbar-dark px-4 py-lg-0">
+                <h4 class="d-lg-none m-0">Menu</h4>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="container">
+            <!-- small-screen brand -->
+            <a class="navbar-brand d-lg-none" href="index.html">Menu</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto align-items-center">
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="index.html"><i
+                                class="fa fa-home me-2"></i>मुखपृष्ठ</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="team.html"><i
+                                class="fa fa-users me-2"></i>पदाधिकारी</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="about.html"><i
+                                class="fa fa-info-circle me-2"></i>गावाची माहिती</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="service.html"><i
+                                class="fa fa-university me-2"></i>शासकीय योजना</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="404.html"><i
+                                class="fa fa-hand-holding-usd me-2"></i>कर भत्ता</a>
+                    </li>
+
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="moreDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-ellipsis-h me-2"></i>अन्य
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                            <li><a class="dropdown-item" href="team.html">ग्रामस्तरिय कर्मचारी</a></li>
+                            <li><a class="dropdown-item" href="404.html">कार्यक्रम</a></li>
+                            <li><a class="dropdown-item" href="404.html">नागरिकांसाठी सेवा</a></li>
+                            <li><a class="dropdown-item" href="404.html">Testimonial</a></li>
+                            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                        </ul>
+                    </li>
+
+                    
+                </ul>
+
+                <!-- <div class="d-flex align-items-center">
+                    <a class="btn btn-outline-light me-2 d-none d-lg-inline" href="contact.html">संपर्क</a>
+                    <button class="btn btn-warning text-dark fw-bold">महत्वाचे नंबर</button>
+                </div> -->
+            </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-4">
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">मुखपृष्ठ</a></li>
+                    
+                    <li class="breadcrumb-item active" aria-current="page">शासकीय योजना </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+
+
+
+
+
+
+    <!-- शासकीय योजना / आपले प्रशासन – Clickable List UI -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="text-center mx-auto mb-4 wow fadeIn" style="max-width:700px;">
+                <p class="section-title text-primary bg-white fw-semibold mb-2 px-3">शासकीय योजना / आपले प्रशासन</p>
+                <p class="text-muted mb-0">शासकीय सर्व महत्वाचे दुव्यांची संपूर्ण माहिती</p>
+            </div>
+
+            <!-- List -->
+            <ul class="list-group list-group-flush">
+
+                <!-- List Item 1 -->
+                <li
+                    class="list-group-item d-flex align-items-center border-1 mb-3 shadow-sm rounded hover-shadow justify-content-between">
+                    <a href="https://www.india.gov.in/" target="_blank"
+                        class="d-flex align-items-center text-decoration-none flex-grow-1 me-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg"
+                            alt="भारत सरकार" class="me-4 rounded hover-scale"
+                            style="width:120px; height:120px; object-fit:cover;">
+                        <div>
+                            <h5 class="mb-1 text-dark">भारत सरकार</h5>
+                            <p class="mb-0 text-muted small">केंद्र सरकारच्या योजना, घडामोडी आणि नागरिकांसाठी सर्व
+                                अधिकृत संदर्भ.</p>
+                        </div>
+                    </a>
+                    <a href="https://www.india.gov.in/" target="_blank"
+                        class="btn btn-primary btn-lg ms-auto hover-scale">अधिक माहिती</a>
+                </li>
+
+                <!-- List Item 2 -->
+                <li
+                    class="list-group-item d-flex align-items-center border-1 mb-3 shadow-sm rounded hover-shadow justify-content-between">
+                    <a href="https://www.maharashtra.gov.in/" target="_blank"
+                        class="d-flex align-items-center text-decoration-none flex-grow-1 me-3">
+                        <img src="https://www.msmc.gov.in/_next/static/media/img2.62f4214f.svg" alt="महाराष्ट्र शासन"
+                            class="me-4 rounded hover-scale" style="width:120px; height:120px; object-fit:cover;">
+                        <div>
+                            <h5 class="mb-1 text-dark">महाराष्ट्र शासन</h5>
+                            <p class="mb-0 text-muted small">राज्य सरकारच्या योजना, संदर्भ आणि स्थानिक धोरणे येथे पहा.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.maharashtra.gov.in/" target="_blank"
+                        class="btn btn-primary btn-lg ms-auto hover-scale">अधिक माहिती</a>
+                </li>
+
+                <!-- List Item 3 -->
+                <li
+                    class="list-group-item d-flex align-items-center border-1 mb-3 shadow-sm rounded hover-shadow justify-content-between">
+                    <a href="https://rdd.maharashtra.gov.in/" target="_blank"
+                        class="d-flex align-items-center text-decoration-none flex-grow-1 me-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_of_panchayat_raj.jpg"
+                            alt="ग्रामीण विकास व पंचायतराज विभाग" class="me-4 rounded hover-scale"
+                            style="width:120px; height:120px; object-fit:cover;">
+                        <div>
+                            <h5 class="mb-1 text-dark">ग्रामीण विकास व पंचायतराज विभाग</h5>
+                            <p class="mb-0 text-muted small">पंचायती राज, जिल्हास्तर योजना आणि ग्रामीण विकासाची अधिकृत
+                                माहिती.</p>
+                        </div>
+                    </a>
+                    <a href="https://rdd.maharashtra.gov.in/" target="_blank"
+                        class="btn btn-primary btn-lg ms-auto hover-scale">अधिक माहिती</a>
+                </li>
+
+                <!-- List Item 4 -->
+                <li
+                    class="list-group-item d-flex align-items-center border-1 mb-3 shadow-sm rounded hover-shadow justify-content-between">
+                    <a href="https://gondia.gov.in/" target="_blank"
+                        class="d-flex align-items-center text-decoration-none flex-grow-1 me-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbgLkRF7viTHsGw4eS2tlft5haAVPMQfk-g&s"
+                            alt="जिल्हाधिकारी कार्यालय" class="me-4 rounded hover-scale"
+                            style="width:120px; height:120px; object-fit:cover;">
+                        <div>
+                            <h5 class="mb-1 text-dark">जिल्हाधिकारी कार्यालय (गोंदिया)</h5>
+                            <p class="mb-0 text-muted small">जिल्हा प्रशासनाशी संबंधित सेवा, सूचना व संपर्क.</p>
+                        </div>
+                    </a>
+                    <a href="https://gondia.gov.in/" target="_blank"
+                        class="btn btn-primary btn-lg ms-auto hover-scale">अधिक माहिती</a>
+                </li>
+
+                <!-- List Item 5 -->
+                <li
+                    class="list-group-item d-flex align-items-center border-1 mb-3 shadow-sm rounded hover-shadow justify-content-between">
+                    <a href="https://www.gondiapolice.gov.in/" target="_blank"
+                        class="d-flex align-items-center text-decoration-none flex-grow-1 me-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQtFJod0SmbW_MeXYfmxZTnmRzGYe5YOzOw&s"
+                            alt="गोंदिया पोलीस" class="me-4 rounded hover-scale"
+                            style="width:120px; height:120px; object-fit:cover;">
+                        <div>
+                            <h5 class="mb-1 text-dark">गोंदिया पोलीस</h5>
+                            <p class="mb-0 text-muted small">आपत्कालीन संपर्क व पोलीस संबंधित सेवांची अधिकृत माहिती.</p>
+                        </div>
+                    </a>
+                    <a href="https://www.gondiapolice.gov.in/" target="_blank"
+                        class="btn btn-primary btn-lg ms-auto hover-scale">अधिक माहिती</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Donate Start -->
+    <!-- <div class="container-fluid donate py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-7 donate-text bg-light py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column justify-content-center h-100 p-5 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-6 mb-4">Let's Donate to Needy People for Better Lives</h1>
+                        <p class="fs-5 mb-0">Through your donations, we spread kindness and support to children,
+                            families, and communities struggling to find stability.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 donate-form bg-primary py-5 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100 p-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                            autocomplete="off" checked>
+                                        <label class="btn btn-light" for="btnradio1">$10</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                            autocomplete="off">
+                                        <label class="btn btn-light" for="btnradio2">$20</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                            autocomplete="off">
+                                        <label class="btn btn-light" for="btnradio3">$30</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4"
+                                            autocomplete="off">
+                                        <label class="btn btn-light" for="btnradio4">$40</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5"
+                                            autocomplete="off">
+                                        <label class="btn btn-light" for="btnradio5">$50</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-secondary py-3 w-100" type="submit">Donate Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Donate End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-12 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="testimonial-title">
+                        <h1 class="display-6 mb-4">What People Say About Our Activities.</h1>
+                        <p class="fs-5 mb-0">We work to bring smiles, hope, and a brighter future to those in need.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8 col-xl-9">
+                    <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <div class="mb-2">
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5">Education is the foundation of change. By funding schools,
+                                            scholarships, and training programs, we can help children and adults unlock
+                                            their potential for a better future.</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-lg-square bg-light text-secondary flex-shrink-0">
+                                                <i class="fa fa-quote-right fa-2x"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h5 class="mb-0">Alexander Bell</h5>
+                                                <span>CEO, Founder</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <div class="mb-2">
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5">Every hand extended in kindness brings us closer to a world free
+                                            from suffering. Be part of a global movement dedicated to building a future
+                                            where equality and compassion thrive.</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-lg-square bg-light text-secondary flex-shrink-0">
+                                                <i class="fa fa-quote-right fa-2x"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h5 class="mb-0">Donald Pakura</h5>
+                                                <span>CEO, Founder</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <div class="mb-2">
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                            <i class="fa fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5">Love and compassion have the power to heal. Through your
+                                            donations and volunteer work, we can spread kindness and support to
+                                            children, families, and communities struggling to find stability.</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-lg-square bg-light text-secondary flex-shrink-0">
+                                                <i class="fa fa-quote-right fa-2x"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h5 class="mb-0">Boris Johnson</h5>
+                                                <span>CEO, Founder</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+  <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container-fluid bg-dark text-light pt-5 mt-5 py-5 footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5 justify-content-center">
+
+                    <!-- About Section -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-primary mb-4">ग्रामपंचायतीची सर्वसाधारण माहिती</h4>
+                        <p class="mb-2"><i class="fa fa-home me-3 text-primary"></i>ग्रामपंचायत: खांबी</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3 text-primary"></i>अर्जुनी/मोरगाव, जिल्हा
+                            गोंदिया
+                        </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3 text-primary"></i>+91 98765 43210</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3 text-primary"></i>info@grampanchayatkhambi.in</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 col-md-6">
+                        <!-- added text-nowrap to keep the heading on one line -->
+                        <h4 class="text-primary mb-4 text-nowrap">द्रुत लिंक</h4>
+                        <div class="d-flex flex-column">
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="index.html"><i
+                                    class="fa fa-angle-right me-2"></i>मुख्य पृष्ठ</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="about.html"><i
+                                    class="fa fa-angle-right me-2"></i>गावाची माहिती</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="contact.html"><i
+                                    class="fa fa-angle-right me-2"></i>संपर्क करा</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="service.html"><i
+                                    class="fa fa-angle-right me-2"></i>शासकीय योजना</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="terms.html"><i
+                                    class="fa fa-angle-right me-2"></i>अटी व शर्ती</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0" href="support.html"><i
+                                    class="fa fa-angle-right me-2"></i>सहाय्य</a>
+                        </div>
+                    </div>
+
+                    <!-- Office Timing -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-primary mb-4">कार्यालय वेळ</h4>
+                        <p class="mb-1">सोमवार - शुक्रवार</p>
+                        <h6 class="text-light">09:00 AM - 07:00 PM</h6>
+                        <p class="mb-1">शनिवार</p>
+                        <h6 class="text-light">09:00 AM - 12:00 PM</h6>
+                        <p class="mb-1">रविवार</p>
+                        <h6 class="text-danger">सुट्टी</h6>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyright pt-5 pt-3">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="fw-semi-bold" href="index.html">ग्रामपंचायत खांबी</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-muted text-md-end">
+
+                        Designed By <a class="text-muted fw-semi-bold text-decoration-underline" href="#">AHatwar</a>.
+                        Distributed by
+                        <a class="fw-semi-bold text-decoration-underline" href="#">Gov. of Maharashtra</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Charitize - Charity Organization Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- fragments/topbar.html -->
+    <div class="w-100 bg-secondary topbar-fragment" style="border-bottom:3px solid #f6c849;">
+        <div class="container d-flex align-items-center justify-content-between py-1">
+            <div class="small text-white-50">महाराष्ट्र शासन | GOVERNMENT OF MAHARASHTRA</div>
+
+            <div class="d-flex align-items-center small justify-content-end flex-column">
+                <div class="d-flex align-items-center small justify-content-center mb-2">
+                    <i class="fa fa-envelope me-2 text-white-50"></i>
+                    <span class="me-3 text-white-50">kambi.stepgp@mail.com</span>
+                </div>
+
+
+                <!-- language selector (keeps native look) -->
+                <select class="leg form-select form-select-sm ms-2" style="width:auto; display:inline-block;">
+                    <option selected>Select Language ▾</option>
+                    <option>मराठी</option>
+                    <option>English</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- fragments/logo-strip.html -->
+    <div class="w-100 bg-white logo-strip" style="border-bottom:6px solid #0b1742;">
+        <div class="container d-flex align-items-center justify-content-between py-3">
+            <div class="d-flex align-items-center">
+                <img src="/img/logo.png" alt="logo" style="width:88px; height:100%; object-fit:cover;" class="me-4">
+                <div>
+                    <h1 class="mb-0" style="color:#f6c849; font-size:34px; font-weight:800; line-height:1;">
+                        ग्रामपंचायत खांबी
+                    </h1>
+                    <div class="small text-muted">ता. अर्जुनी-मोरगाव, जि. गोंदिया</div>
+                </div>
+            </div>
+
+            <div class="d-none d-md-flex align-items-center gap-3">
+                <img src="/img/nav/nav_logo1.png" alt="badge1" style="height:48px; object-fit:contain;">
+                <img src="/img/nav/nav_logo2.png" alt="badge2" style="height:48px; object-fit:contain;">
+            </div>
+        </div>
+    </div>
+    <!-- fragments/navbar.html -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="border-top:3px solid #f6c849;">
+        <div class="container">
+            <!-- small-screen brand -->
+            <a class="navbar-brand d-lg-none" href="index.html">Menu</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto align-items-center">
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="index.html"><i
+                                class="fa fa-home me-2"></i>मुखपृष्ठ</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="team.html"><i
+                                class="fa fa-users me-2"></i>पदाधिकारी</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="about.html"><i
+                                class="fa fa-info-circle me-2"></i>गावाची माहिती</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="service.html"><i
+                                class="fa fa-university me-2"></i>शासकीय योजना</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="404.html"><i
+                                class="fa fa-hand-holding-usd me-2"></i>कर भत्ता</a>
+                    </li>
+
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="moreDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-ellipsis-h me-2"></i>अन्य
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                            <li><a class="dropdown-item" href="team.html">ग्रामस्तरिय कर्मचारी</a></li>
+                            <li><a class="dropdown-item" href="404.html">कार्यक्रम</a></li>
+                            <li><a class="dropdown-item" href="404.html">नागरिकांसाठी सेवा</a></li>
+                            <li><a class="dropdown-item" href="404.html">Testimonial</a></li>
+                            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="contact.html"><i
+                                class="fa fa-phone me-2"></i>संपर्क करा</a>
+                    </li>
+                </ul>
+
+                <!-- <div class="d-flex align-items-center">
+                    <a class="btn btn-outline-light me-2 d-none d-lg-inline" href="contact.html">संपर्क</a>
+                    <button class="btn btn-warning text-dark fw-bold">महत्वाचे नंबर</button>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-4">
+
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#!">मुखपृष्ठ</a></li>
+                    
+                    <li class="breadcrumb-item active" aria-current="page">गावाची माहिती</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+   <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="about-img">
+                        <!-- <img class="img-fluid w-100" src="img/about.jpg" alt="Image"> -->
+                        <img class="img-fluid w-100"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Muhamma_grama_panchayath.jpg/1200px-Muhamma_grama_panchayath.jpg"
+                            alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="section-title bg-white text-start text-primary pe-3">गावाची माहिती</p>
+                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">आमची गावाची माहिती</h1>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">ग्रामपंचायत खांबी गाव हे गोंदिया जिल्ह्यातील
+                        अर्जुनी/मोरगाव तालुक्यात वसलेले एक शेती प्रधान आणि प्रगतशील गाव असून, याची ओळख पर्यावरणपूरक
+                        जीवनशैली, सामाजिक एकता आणि सर्वांगीण विकासासाठी घेतलेल्या उपक्रमांमुळे विशेष ठरते. हे गाव
+                        नैसर्गिक सौंदर्याने नटलेले असून, पर्यावरण संरक्षणासाठी येथे विशेष प्रयत्न केले जातात. सुमारे
+                        १३१२ लोकसंख्या असलेल्या या गावातील ग्रामस्थांनी स्वच्छता, शिक्षण, आरोग्य, आणि कृषी क्षेत्रात
+                        उल्लेखनीय कामगिरी करत गावाचा विकास साधला आहे. 1959 मध्ये स्थापनेपासून ग्रामपंचायतने गावाच्या
+                        सर्वांगीण प्रगतीसाठी सातत्याने प्रयत्न केले असून, सामाजिक आणि पर्यावरणपूरक उपक्रम राबवून
+                        गावाच्या विकासाची दिशा निश्चित केली आहे. सामाजिक सहकार्य, पारदर्शक प्रशासन आणि शाश्वत विकासाच्या
+                        माध्यमातून गावाने स्वतःची वेगळी ओळख निर्माण केली आहे</p>
+
+                    <div class="row g-4 pt-2">
+                        <div class="col-sm wow fadeIn" data-wow-delay="0.4s">
+                            <div class="h-100">
+                                <h3>आमचे ध्येय</h3>
+                                <p>प्रत्येक नागरिकाला शिक्षण, आरोग्य आणि स्वच्छतेच्या सुविधा उपलब्ध करून देणे.</p>
+
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i>
+                                    पारदर्शक आणि जबाबदार प्रशासन ठेवणे.</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i>
+                                    गावातील रस्ते, पाणीपुरवठा, वीज आणि डिजिटल सुविधा सुधारणा करणे.</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i>
+                                    शेती व ग्रामउद्योगांचा विकास करून आत्मनिर्भर गाव निर्माण करणे.</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i>
+                                    महिला सक्षमीकरण आणि युवकांना रोजगाराच्या संधी उपलब्ध करून देणे.</p>
+                                <p class="text-dark mb-0"><i class="fa fa-check text-primary me-2"></i>
+                                    “स्वच्छ, सुंदर आणि समृद्ध खांबी ” हे आदर्श ग्रामपंचायत बनविणे.</p>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 bg-primary p-4 text-center">
+                                <p class="fs-5 text-dark">Through your donations, we spread kindness and support to
+                                    children and families.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="#!">Donate Now</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+      <!-- Video Start -->
+    <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-11">
+                    <div class="h-100 py-5 d-flex align-items-center">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/ANWHrsUMqYE?si=B_nkkss_YMdNmtst" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h3 class="ms-5 mb-0">एक कदम सवछता की ओर - स्वच्छ भारत मीशन 
+                        </h3>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-1">
+                    <div class="h-100 w-100 bg-secondary d-flex align-items-center justify-content-center">
+                        <span class="text-white" style="transform: rotate(-90deg);">Scroll Down</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video End -->
+
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">पदाधिकारी</p>
+                <h2 class="fw-bold text-dark mb-4 fs-3 text-nowrap">
+                    " गावाच्या प्रगतीचे खरे शिल्पकार "
+                </h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Team Member 1 -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="team-item bg-white shadow-sm p-4 text-center h-100"
+                        onmouseover="this.classList.add('shadow-lg','border-success')"
+                        onmouseout="this.classList.remove('shadow-lg','border-success')">
+                        <img class="img-fluid rounded-circle mb-3" src="img/team-2.jpg" alt="Sarpanch"
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                        <h4 class="mb-1">Mr. Shingh</h4>
+                        <p class="text-primary mb-1">सरपंच</p>
+                        <p class="text-muted mb-0">📞 9876543210</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="team-item bg-white shadow-sm p-4 text-center h-100"
+                        onmouseover="this.classList.add('shadow-lg','border-success')"
+                        onmouseout="this.classList.remove('shadow-lg','border-success')">
+                        <img class="img-fluid rounded-circle mb-3" src="img/team-3.jpg" alt="Upsarpanch"
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                        <h4 class="mb-1">Mr. Alexander Bell</h4>
+                        <p class="text-primary mb-1">उपसरपंच</p>
+                        <p class="text-muted mb-0">📞 9876543211</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="team-item bg-white shadow-sm p-4 text-center h-100"
+                        onmouseover="this.classList.add('shadow-lg','border-success')"
+                        onmouseout="this.classList.remove('shadow-lg','border-success')">
+                        <img class="img-fluid rounded-circle mb-3" src="img/team-1.jpg" alt="Gramsevak"
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                        <h4 class="mb-1">Mr. Gramsevak</h4>
+                        <p class="text-primary mb-1">ग्रामपंचायत अधिकारी</p>
+                        <p class="text-muted mb-0">📞 91346545676</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+        <!-- Banner Start -->
+    <div class="container-fluid banner py-5">
+        <div class="container">
+            <div class="banner-inner bg-light p-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 py-5 text-center">
+                        <h1 class="display-6 wow fadeIn" data-wow-delay="0.3s">🌾 “एकत्र प्रयत्न, सर्वांगीण विकास – आपला
+                            ग्राम, आपला अभिमान.”</h1>
+                        <p class="fs-5 mb-4 wow fadeIn" data-wow-delay="0.5s">आपल्या ग्रामातील प्रत्येक नागरिकाच्या
+                            सहभागातून स्वच्छ, प्रगत आणि आत्मनिर्भर गाव घडविण्याचा हा संकल्प आहे.</p>
+                        <!-- <div class="d-flex justify-content-center wow fadeIn" data-wow-delay="0.7s">
+                            <a class="btn btn-primary py-3 px-4 me-3" href="#!">Donate Now</a>
+                            <a class="btn btn-secondary py-3 px-4" href="#!">Join Us Now</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Population/Features Section Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-title text-primary d-inline-block px-3 bg-white">Why Us!</p>
+                <h1 class="display-6 mt-2">गावची लोकसंख्या किती आहे?</h1>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center border-0 shadow-sm h-100 hover-card bg-light">
+                        <div class="card-body py-5">
+                            <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                            <h2 class="fw-bold" data-toggle="counter-up">500</h2>
+                            <p class="text-dark mb-0">कुटुंब संख्या</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center border-0 shadow-sm h-100 hover-card bg-primary text-white">
+                        <div class="card-body py-5">
+                            <i class="fa fa-award fa-3x text-white mb-3"></i>
+                            <h2 class="fw-bold text-white" data-toggle="counter-up">7000</h2>
+                            <p class="mb-0">लोकसंख्या</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center border-0 shadow-sm h-100 hover-card bg-secondary text-white">
+                        <div class="card-body py-5">
+                            <i class="fa fa-male fa-3x text-light mb-3"></i>
+                            <h2 class="fw-bold text-white" data-toggle="counter-up">3000</h2>
+                            <p class="mb-0">पुरुष</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center border-0 shadow-sm h-100 hover-card bg-info text-dark">
+                        <div class="card-body py-5">
+                            <i class="fa fa-female fa-3x text-dark mb-3"></i>
+                            <h2 class="fw-bold" data-toggle="counter-up">4000</h2>
+                            <p class="mb-0">महिला</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Population Section End -->
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container-fluid bg-dark text-light pt-5 mt-5 py-5 footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5 justify-content-center">
+
+                    <!-- About Section -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-primary mb-4">ग्रामपंचायतीची सर्वसाधारण माहिती</h4>
+                        <p class="mb-2"><i class="fa fa-home me-3 text-primary"></i>ग्रामपंचायत: खांबी</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3 text-primary"></i>अर्जुनी/मोरगाव, जिल्हा
+                            गोंदिया
+                        </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3 text-primary"></i>+91 98765 43210</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3 text-primary"></i>info@grampanchayatkhambi.in</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 col-md-6">
+                        <!-- added text-nowrap to keep the heading on one line -->
+                        <h4 class="text-primary mb-4 text-nowrap">द्रुत लिंक</h4>
+                        <div class="d-flex flex-column">
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="index.html"><i
+                                    class="fa fa-angle-right me-2"></i>मुख्य पृष्ठ</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="about.html"><i
+                                    class="fa fa-angle-right me-2"></i>गावाची माहिती</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="contact.html"><i
+                                    class="fa fa-angle-right me-2"></i>संपर्क करा</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="service.html"><i
+                                    class="fa fa-angle-right me-2"></i>शासकीय योजना</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0 mb-1" href="terms.html"><i
+                                    class="fa fa-angle-right me-2"></i>अटी व शर्ती</a>
+                            <a class="btn btn-link text-light text-decoration-none px-0" href="support.html"><i
+                                    class="fa fa-angle-right me-2"></i>सहाय्य</a>
+                        </div>
+                    </div>
+
+                    <!-- Office Timing -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-primary mb-4">कार्यालय वेळ</h4>
+                        <p class="mb-1">सोमवार - शुक्रवार</p>
+                        <h6 class="text-light">09:00 AM - 07:00 PM</h6>
+                        <p class="mb-1">शनिवार</p>
+                        <h6 class="text-light">09:00 AM - 12:00 PM</h6>
+                        <p class="mb-1">रविवार</p>
+                        <h6 class="text-danger">सुट्टी</h6>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyright pt-5 pt-3">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="fw-semi-bold" href="index.html">ग्रामपंचायत खांबी</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-muted text-md-end">
+
+                        Designed By <a class="text-muted fw-semi-bold text-decoration-underline" href="#">AHatwar</a>.
+                        Distributed by
+                        <a class="fw-semi-bold text-decoration-underline" href="#">Gov. of Maharashtra</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -41,93 +41,105 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
-        <div class="row align-items-center h-100">
-            <div class="col-lg-4 text-center text-lg-start">
-                <a href="index.html">
-                    <h1 class="display-5 text-primary m-0">Charitize</h1>
-                </a>
-            </div>
-            <div class="col-lg-8 d-none d-lg-block">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="d-flex justify-content-end">
-                            <div class="flex-shrink-0 btn-square bg-primary">
-                                <i class="fa fa-phone-alt text-dark"></i>
-                            </div>
-                            <div class="ms-2">
-                                <h6 class="text-primary mb-0">Call Us</h6>
-                                <span class="text-white">+012 345 6789</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex justify-content-end">
-                            <div class="flex-shrink-0 btn-square bg-primary">
-                                <i class="fa fa-envelope-open text-dark"></i>
-                            </div>
-                            <div class="ms-2">
-                                <h6 class="text-primary mb-0">Mail Us</h6>
-                                <span class="text-white">info@domain.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex justify-content-end">
-                            <div class="flex-shrink-0 btn-square bg-primary">
-                                <i class="fa fa-map-marker-alt text-dark"></i>
-                            </div>
-                            <div class="ms-2">
-                                <h6 class="text-primary mb-0">Address</h6>
-                                <span class="text-white">123 Street, NY, USA</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Top thin bar -->
+    <div class="w-100 bg-secondary topbar-fragment" style="border-bottom:3px solid #f6c849;">
+        <div class="container d-flex align-items-center justify-content-between py-1 flex-wrap">
+            <div class="small text-white-50">महाराष्ट्र शासन | GOVERNMENT OF MAHARASHTRA</div>
+
+            <div class="d-flex align-items-center small topbar-right">
+                <i class="fa fa-envelope me-2 text-white-50"></i>
+                <span class="me-3 text-white-50 topbar-email">wadegaon.stepgp@rediffmail.com</span>
+
+                <select class="form-select form-select-sm ms-2 topbar-lang" style="width:auto; ;">
+                    <option selected>Select Language ▾</option>
+                    <option>मराठी</option>
+                    <option>English</option>
+                </select>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
-
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-secondary px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="nav-bar">
-            <nav class="navbar navbar-expand-lg bg-primary navbar-dark px-4 py-lg-0">
-                <h4 class="d-lg-none m-0">Menu</h4>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav me-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="donation.html" class="nav-item nav-link">Donation</a>
-                        <div class="nav-item dropdown">
-                            <a href="#!" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu bg-light m-0">
-                                <a href="event.html" class="dropdown-item">Event</a>
-                                <a href="feature.html" class="dropdown-item">Feature</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <div class="d-none d-lg-flex ms-auto">
-                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-dark ms-2" href="#!"><i class="fab fa-youtube"></i></a>
-                    </div>
+    <!-- Logo strip -->
+    <div class="w-100 bg-white logo-strip" style="border-bottom:4px solid #0b1742;">
+        <div class="container d-flex align-items-center justify-content-between py-3">
+            <div class="d-flex align-items-center">
+                <img src="img/logo.png" alt="logo" style="width:88px; height:100%; object-fit:cover;" class="me-3">
+                <div>
+                    <h1 class="mb-0" style="color:#f6c849; font-size:30px; font-weight:800; line-height:1;">
+                       ग्रामपंचायत खांबी
+                    </h1>
+                    <div class="small text-muted">ता. अर्जुनी-मोरगाव, जि. गोंदिया</div>
                 </div>
-            </nav>
+            </div>
+
+            <div class="d-none d-md-flex align-items-center gap-3">
+                <img src="img/nav/nav_logo1.png" alt="badge1" style="height:48px; object-fit:contain;">
+                <img src="img/nav/nav_logo2.png" alt="badge2" style="height:48px; object-fit:contain;">
+            </div>
         </div>
     </div>
-    <!-- Navbar End -->
+    <!-- Main navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="border-top:3px solid #f6c849; ">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="index.html">Menu</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto align-items-center">
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="index.html"><i
+                                class="fa fa-home me-2"></i>मुखपृष्ठ</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="team.html"><i
+                                class="fa fa-users me-2"></i>पदाधिकारी</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="about.html"><i
+                                class="fa fa-info-circle me-2"></i>गावाची माहिती</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="service.html"><i
+                                class="fa fa-university me-2"></i>शासकीय योजना</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="404.html"><i
+                                class="fa fa-hand-holding-usd me-2"></i>कर भत्ता</a>
+                    </li>
+
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="moreDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-ellipsis-h me-2"></i>अन्य
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                            <li><a class="dropdown-item" href="team.html">ग्रामस्तरिय कर्मचारी</a></li>
+                            <li><a class="dropdown-item" href="404.html">कार्यक्रम</a></li>
+                            <li><a class="dropdown-item" href="404.html">नागरिकांसाठी सेवा</a></li>
+                            <li><a class="dropdown-item" href="404.html">Testimonial</a></li>
+                            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="nav-item px-2">
+                        <a class="nav-link d-flex align-items-center" href="contact.html"><i
+                                class="fa fa-phone me-2"></i>संपर्क करा</a>
+                    </li> -->
+                </ul>
+
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-outline-light me-2 d-none d-lg-inline" href="contact.html">संपर्क</a>
+                    <button class="btn btn-warning text-dark fw-bold">महत्वाचे नंबर</button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
 
     <!-- Page Header Start -->

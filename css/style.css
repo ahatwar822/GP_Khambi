@@ -140,6 +140,15 @@
     }
 }
 
+/* scrolled state: keep height and add shadow — no layout reflow */
+.navbar.scrolled {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+
 /* assets/css/header-overrides.css */
 
 /* Make the top strips and navbar abut cleanly */
@@ -153,6 +162,24 @@
 
 /* Slightly reduce topbar font on small screens */
 .topbar-fragment .small { font-size: 13px; }
+
+/* Allow the topbar content to wrap and keep spacing */
+.topbar-fragment .container { gap: .25rem; }
+
+/* Ensure the right block can wrap and align properly */
+.topbar-right { flex-wrap: wrap; gap: .5rem; }
+
+/* On very small screens, hide the long email and keep icon + language */
+@media (max-width: 992px) {
+  .topbar-fragment .container { padding-left: .5rem; padding-right: .5rem; }
+  
+  /* .topbar-email { display: block; } */
+ 
+  .topbar-lang { display: none; }
+  /* make the right section sit under the left and right-aligned */
+  .topbar-right { width: 100%; justify-content: flex-end; }
+}
+
 
 
 /* Nav link tighter spacing (matches screenshot) */
@@ -169,6 +196,11 @@
 /* Preserve sticky behavior without overlap */
 .navbar.sticky-top { z-index: 1020; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
 
+/* small responsive fix */
+@media (max-width:575.98px) {
+  .logo-strip img { width:56px; height:56px; }
+  
+}
 
 /* marquee-bar */
 
@@ -458,6 +490,40 @@ marquee {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* Card hover effects */
+.hover-effect {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Image hover scale */
+.img-hover {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.img-hover:hover {
+  transform: scale(1.08);
+}
+
+/* Mobile adjustment */
+@media (max-width: 575.98px) {
+  .card-body {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-body img {
+    margin-bottom: 10px;
+  }
+  .card-body .btn {
+    width: 100%;
+  }
+}
+
 
 
 /*** Donation ***/

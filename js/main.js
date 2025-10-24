@@ -17,11 +17,12 @@
 
 
     // Sticky Navbar
-    $(window).scroll(function () {
+
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 90) {
-            $('.nav-bar').addClass('fixed-top').css('padding', '0');
+            $('.navbar').addClass('scrolled');
         } else {
-            $('.nav-bar').removeClass('fixed-top').css('padding', '0px 90px');
+            $('.navbar').removeClass('scrolled');
         }
     });
     
@@ -111,20 +112,20 @@
 
 
 // assets/js/header-loader.js
-(function () {
-  const fragments = [
-    { id: 'topbar-placeholder', url: '/fragments/topbar.html' },
-    { id: 'logo-placeholder', url: '/fragments/logo-strip.html' },
-    { id: 'navbar-placeholder', url: '/fragments/navbar.html' }
-  ];
+// (function () {
+//   const fragments = [
+//     { id: 'topbar-placeholder', url: '/fragments/topbar.html' },
+//     { id: 'logo-placeholder', url: '/fragments/logo-strip.html' },
+//     { id: 'navbar-placeholder', url: '/fragments/navbar.html' }
+//   ];
 
-  fragments.forEach(f => {
-    const el = document.getElementById(f.id);
-    if (!el) return;
-    fetch(f.url, { cache: "no-cache" })
-      .then(r => { if (!r.ok) throw new Error('Network'); return r.text(); })
-      .then(html => el.innerHTML = html)
-      .catch(err => console.error('Error loading', f.url, err));
-  });
-})();
+//   fragments.forEach(f => {
+//     const el = document.getElementById(f.id);
+//     if (!el) return;
+//     fetch(f.url, { cache: "no-cache" })
+//       .then(r => { if (!r.ok) throw new Error('Network'); return r.text(); })
+//       .then(html => el.innerHTML = html)
+//       .catch(err => console.error('Error loading', f.url, err));
+//   });
+// })();
 
